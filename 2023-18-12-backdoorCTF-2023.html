@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. PRSA &#8212; My sample book</title>
+    <title>Backdoor CTF 2023 &#8212; My sample book</title>
   
   
   
@@ -167,12 +167,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. PRSA</a></li>
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Backdoor CTF 2023</a></li>
 </ul>
 
     </div>
@@ -356,7 +351,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. PRSA</h1>
+    <h1>Backdoor CTF 2023</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,17 +361,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. PRSA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prsa">1. PRSA</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knapsack">2. Knapsack</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curvy-curves">3. Curvy_Curves</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safe-curvy-curve">4. Safe Curvy Curve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions">5. Secure_Matrix_Transmissions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rebellious">6. Rebellious</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions-v2">7. Secure_Matrix_Transmissions_v2</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#curvy-curves">3. Curvy_Curves</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#safe-curvy-curve">4. Safe Curvy Curve</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions">5. Secure_Matrix_Transmissions</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rebellious">6. Rebellious</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions-v2">7. Secure_Matrix_Transmissions_v2</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -387,8 +379,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="prsa">
-<h1>1. PRSA<a class="headerlink" href="#prsa" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="backdoor-ctf-2023">
+<h1>Backdoor CTF 2023<a class="headerlink" href="#backdoor-ctf-2023" title="Permalink to this heading">#</a></h1>
+<div class="section" id="prsa">
+<h2>1. PRSA<a class="headerlink" href="#prsa" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">bytes_to_long</span><span class="p">,</span> <span class="n">getPrime</span>
 
@@ -436,6 +430,7 @@ document.write(`
 
 <span class="c1"># b&#39;flag{S0_1mPL3m3n71nG_R54_0n_P0lYn0m1aL5_1n5734d_d1dn7_w0rk_hUh!!?}&#39;</span>
 </pre></div>
+</div>
 </div>
 <div class="section" id="knapsack">
 <h2>2. Knapsack<a class="headerlink" href="#knapsack" title="Permalink to this heading">#</a></h2>
@@ -515,9 +510,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="curvy-curves">
-<h1>3. Curvy_Curves<a class="headerlink" href="#curvy-curves" title="Permalink to this heading">#</a></h1>
+<div class="section" id="curvy-curves">
+<h2>3. Curvy_Curves<a class="headerlink" href="#curvy-curves" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">getRandomNBitInteger</span><span class="p">,</span> <span class="n">bytes_to_long</span><span class="p">,</span> <span class="n">long_to_bytes</span>
 <span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -620,8 +614,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="safe-curvy-curve">
-<h1>4. Safe Curvy Curve<a class="headerlink" href="#safe-curvy-curve" title="Permalink to this heading">#</a></h1>
+<div class="section" id="safe-curvy-curve">
+<h2>4. Safe Curvy Curve<a class="headerlink" href="#safe-curvy-curve" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">getPrime</span><span class="p">,</span> <span class="n">getRandomNBitInteger</span><span class="p">,</span> <span class="n">bytes_to_long</span><span class="p">,</span> <span class="n">long_to_bytes</span>
 <span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -704,8 +698,8 @@ document.write(`
 </div>
 <p>Bài này tương tự bài trên và cũng có một mạnh thường quân nào đó đã donate factor của <span class="math notranslate nohighlight">\(n\)</span> :))))</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="secure-matrix-transmissions">
-<h1>5. Secure_Matrix_Transmissions<a class="headerlink" href="#secure-matrix-transmissions" title="Permalink to this heading">#</a></h1>
+<div class="section" id="secure-matrix-transmissions">
+<h2>5. Secure_Matrix_Transmissions<a class="headerlink" href="#secure-matrix-transmissions" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">bytes_to_long</span><span class="p">,</span> <span class="n">long_to_bytes</span>
 <span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">AES</span>
@@ -944,8 +938,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="rebellious">
-<h1>6. Rebellious<a class="headerlink" href="#rebellious" title="Permalink to this heading">#</a></h1>
+<div class="section" id="rebellious">
+<h2>6. Rebellious<a class="headerlink" href="#rebellious" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">random</span>
@@ -1080,8 +1074,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="secure-matrix-transmissions-v2">
-<h1>7. Secure_Matrix_Transmissions_v2<a class="headerlink" href="#secure-matrix-transmissions-v2" title="Permalink to this heading">#</a></h1>
+<div class="section" id="secure-matrix-transmissions-v2">
+<h2>7. Secure_Matrix_Transmissions_v2<a class="headerlink" href="#secure-matrix-transmissions-v2" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">bytes_to_long</span><span class="p">,</span> <span class="n">long_to_bytes</span>
 <span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">AES</span>
@@ -1404,6 +1398,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1459,17 +1454,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. PRSA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prsa">1. PRSA</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knapsack">2. Knapsack</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curvy-curves">3. Curvy_Curves</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safe-curvy-curve">4. Safe Curvy Curve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions">5. Secure_Matrix_Transmissions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rebellious">6. Rebellious</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions-v2">7. Secure_Matrix_Transmissions_v2</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#curvy-curves">3. Curvy_Curves</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#safe-curvy-curve">4. Safe Curvy Curve</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions">5. Secure_Matrix_Transmissions</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rebellious">6. Rebellious</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#secure-matrix-transmissions-v2">7. Secure_Matrix_Transmissions_v2</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
