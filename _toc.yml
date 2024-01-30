@@ -6,4 +6,5 @@ root: intro
 chapters:
 - file: googleCTF-2021.md
 - file: isitdtu-2022.md
+- file: diceCTF-2023.md
 - file: 2023-18-12-backdoorCTF-2023.md
