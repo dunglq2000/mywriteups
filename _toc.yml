@@ -11,6 +11,7 @@ parts:
   - caption: CTF 2022
     chapters:
     - file: isitdtu-2022.md
+    - file: downunderCTF-2022.md
   - caption: CTF 2023
     chapters:
     - file: diceCTF-2023.md
