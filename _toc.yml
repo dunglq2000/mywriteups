@@ -3,10 +3,16 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: cryptoCTF-2021.md
-- file: googleCTF-2021.md
-- file: isitdtu-2022.md
-- file: diceCTF-2023.md
-- file: googleCTF-2023.md
-- file: 2023-18-12-backdoorCTF-2023.md
+parts:
+  - caption: CTF 2021
+    chapters:
+    - file: cryptoCTF-2021.md
+    - file: googleCTF-2021.md
+  - caption: CTF 2022
+    chapters:
+    - file: isitdtu-2022.md
+  - caption: CTF 2023
+    chapters:
+    - file: diceCTF-2023.md
+    - file: googleCTF-2023.md
+    - file: 2023-18-12-backdoorCTF-2023.md
