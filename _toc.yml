@@ -19,3 +19,4 @@ parts:
     - file: googleCTF-2023.md
     - file: 2023-18-12-backdoorCTF-2023.md
     - file: utctf-2023.md
+    - file: wolvCTF-2023.md
