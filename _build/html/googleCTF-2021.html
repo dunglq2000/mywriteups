@@ -526,6 +526,7 @@ document.write(`
 <section id="counter-mode-ctr">
 <h3>1. Counter mode (CTR)<a class="headerlink" href="#counter-mode-ctr" title="Link to this heading">#</a></h3>
 <p>Mình nên bắt đầu với CTR mode trước. Ở đây một bộ đếm (counter) được sử dụng. Chúng ta có thể dùng bộ đếm cơ bản <span class="math notranslate nohighlight">\(0, 1, 2, \ldots\)</span> hoặc các bộ đếm phức tạp hơn. Mô hình mã hóa với khóa <span class="math notranslate nohighlight">\(K\)</span> là <span class="math notranslate nohighlight">\(C_i = P_i \oplus \text{AES}_K (\text{counter}_i)\)</span> hoặc <span class="math notranslate nohighlight">\(C_i = E_K (P_i, \text{counter}_i)\)</span> nên việc dùng bộ đếm nào cũng không quá quan trọng, qua hàm <span class="math notranslate nohighlight">\(\text{AES}\)</span> thì đều khó cả.</p>
+<p><img alt="CTR" src="_images/CTR_encryption.png" /></p>
 </section>
 <section id="authenticated-encryption-aead">
 <h3>2. Authenticated encryption (AEAD)<a class="headerlink" href="#authenticated-encryption-aead" title="Link to this heading">#</a></h3>
@@ -538,6 +539,7 @@ document.write(`
 </section>
 <section id="galois-counter-mode-gcm">
 <h3>3. Galois/Counter mode (GCM)<a class="headerlink" href="#galois-counter-mode-gcm" title="Link to this heading">#</a></h3>
+<p><img alt="GCM" src="_images/GCM_encryption.png" /></p>
 <p>Ở mode này, phần trên là CTR mode, ở phần dưới có tính toán thêm về associated data để tạo ra tag. Tất cả việc tính toán qua hàm <span class="math notranslate nohighlight">\(\text{mult}_H\)</span> hay <span class="math notranslate nohighlight">\(C_i \oplus \text{mult}_H\)</span> được thực hiện trên <span class="math notranslate nohighlight">\(GF(2^{128})\)</span> (đa thức tối giản là <span class="math notranslate nohighlight">\(f(x) = x^{128} + x^7 + x^2 + x + 1\)</span>). Lý do của việc này là mỗi block của AES gồm <span class="math notranslate nohighlight">\(16\)</span> byte, tương đương <span class="math notranslate nohighlight">\(128\)</span> bit, khi đó cần thực hiện chuyển đổi từ block <span class="math notranslate nohighlight">\(16\)</span> byte thành đa thức thuộc <span class="math notranslate nohighlight">\(GF(2^{128})\)</span>.</p>
 <p>Giả sử mình có ciphertext <span class="math notranslate nohighlight">\(C\)</span> gồm <span class="math notranslate nohighlight">\(n\)</span> block. Mình ký hiệu <span class="math notranslate nohighlight">\(C = C_0 \Vert C_1 \Vert C_2 \Vert \cdots \Vert C_{n-1}\)</span>.</p>
 <p>Đối với bài CTF trên thì associated data không dùng nên mình sẽ bỏ qua.</p>

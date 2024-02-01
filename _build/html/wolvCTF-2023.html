@@ -709,9 +709,9 @@ document.write(`
 <p>Trong bài này chúng ta có ba lần request với ba nonce khác nhau để encrypt hoặc decrypt.</p>
 <p>Xét hàm <code class="docutils literal notranslate"><span class="pre">incr</span></code> mình thấy counter thực hiện cộng lên 1 ở mỗi bước.</p>
 <p>Nếu mình bắt đầu từ <span class="math notranslate nohighlight">\(\mathrm{nonce}=0\)</span>, với ba block plaintext <span class="math notranslate nohighlight">\(P_1, P_2, P_3\)</span> thì ciphertext tương ứng sẽ như sau.</p>
-<p><em>Ở đây đã từng có hình :)))</em></p>
+<p><img alt="Hình 1" src="_images/wolv1.jpg" /></p>
 <p>Tại sao mình cần ba block plaintext trong khi <code class="docutils literal notranslate"><span class="pre">message</span></code> của mình là hai block (<span class="math notranslate nohighlight">\(32\)</span> byte)? Vì ý tưởng của mình khi decrypt là gửi <span class="math notranslate nohighlight">\(\mathrm{nonce}=1\)</span> lên, khi đó các giá trị trung gian (AES của counter) giữ nguyên với lúc encrypt.</p>
-<p><em>Ở đây đã từng có hình :)))</em></p>
+<p><img alt="Hình 2" src="_images/wolv2.jpg" /></p>
 <p><em>Lưu ý</em> rằng ở hình 1, mình encrypt với <span class="math notranslate nohighlight">\(P = 0\)</span> và <span class="math notranslate nohighlight">\(\mathrm{nonce} = 0\)</span> nên mình sẽ có <span class="math notranslate nohighlight">\(C_i = u_i\)</span>. Ở hình 2 mình có <span class="math notranslate nohighlight">\(P'_i \oplus C'_i = P_{i+1} \oplus C_{i+1} = C_{i+1}\)</span>, nên mình sẽ tìm được <span class="math notranslate nohighlight">\(C'_i\)</span> ứng với <span class="math notranslate nohighlight">\(P'_i\)</span> là message (<span class="math notranslate nohighlight">\(C'_i = P'_i \oplus C_{i+1}\)</span>).</p>
 <p>Vậy còn bước authentication?</p>
 <p>Nhắc lại về cách tính tag. Trong <span class="math notranslate nohighlight">\(\mathrm{GF}(2^{128})\)</span>, giả sử với các ciphertext <span class="math notranslate nohighlight">\(C_1, C_2, \cdots, C_{n}\)</span>, với <span class="math notranslate nohighlight">\(H = \text{AES}_K(0^{128})\)</span>, <span class="math notranslate nohighlight">\(L = \mathrm{len}(A) || \mathrm{len}(C)\)</span> và <span class="math notranslate nohighlight">\(I = \text{AES}_K (J_0)\)</span> với <span class="math notranslate nohighlight">\(J_0\)</span> là nơi bắt đầu counter.</p>

@@ -111,6 +111,8 @@ Mình sẽ cần hiểu về AES-GCM hoạt động như nào.
 
 Mình nên bắt đầu với CTR mode trước. Ở đây một bộ đếm (counter) được sử dụng. Chúng ta có thể dùng bộ đếm cơ bản $0, 1, 2, \ldots$ hoặc các bộ đếm phức tạp hơn. Mô hình mã hóa với khóa $K$ là $C_i = P_i \oplus \text{AES}_K (\text{counter}_i)$ hoặc $C_i = E_K (P_i, \text{counter}_i)$ nên việc dùng bộ đếm nào cũng không quá quan trọng, qua hàm $\text{AES}$ thì đều khó cả.
 
+![CTR](assets/CTR_encryption.png)
+
 ### 2. Authenticated encryption (AEAD)
 
 Một vấn đề quan trọng đối với mã hóa đối xứng (stream cipher và block cipher) là làm sao để kiểm tra thông tin có bị sửa đổi không? Nói cách khác, làm sao phòng ngừa MITM attack?
@@ -126,6 +128,8 @@ Ví dụ, giả sử Alice muốn gửi cho Bob plaintext $P$. Alice chọn nonc
 Giả sử Bob nhận được message $M' = \{N', C', T'\}$ và tính $\tau = \text{MAC}_K (N', C', A^d)$ và so sánh với $T'$. Nếu $\tau = T'$ thì ciphertext không bị sai lệch, từ đó Bob decrypt $P'=D_K(N', C')$.
 
 ### 3. Galois/Counter mode (GCM)
+
+![GCM](assets/GCM_encryption.png)
 
 Ở mode này, phần trên là CTR mode, ở phần dưới có tính toán thêm về associated data để tạo ra tag. Tất cả việc tính toán qua hàm $\text{mult}_H$ hay $C_i \oplus \text{mult}_H$ được thực hiện trên $GF(2^{128})$ (đa thức tối giản là $f(x) = x^{128} + x^7 + x^2 + x + 1$). Lý do của việc này là mỗi block của AES gồm $16$ byte, tương đương $128$ bit, khi đó cần thực hiện chuyển đổi từ block $16$ byte thành đa thức thuộc $GF(2^{128})$.
 

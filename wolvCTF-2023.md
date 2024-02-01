@@ -308,11 +308,11 @@ Xét hàm `incr` mình thấy counter thực hiện cộng lên 1 ở mỗi bư�
 
 Nếu mình bắt đầu từ $\mathrm{nonce}=0$, với ba block plaintext $P_1, P_2, P_3$ thì ciphertext tương ứng sẽ như sau.
 
-*Ở đây đã từng có hình :)))*
+![Hình 1](assets/wolv1.jpg)
 
 Tại sao mình cần ba block plaintext trong khi `message` của mình là hai block ($32$ byte)? Vì ý tưởng của mình khi decrypt là gửi $\mathrm{nonce}=1$ lên, khi đó các giá trị trung gian (AES của counter) giữ nguyên với lúc encrypt.
 
-*Ở đây đã từng có hình :)))*
+![Hình 2](assets/wolv2.jpg)
 
 _Lưu ý_ rằng ở hình 1, mình encrypt với $P = 0$ và $\mathrm{nonce} = 0$ nên mình sẽ có $C_i = u_i$. Ở hình 2 mình có $P'_i \oplus C'_i = P_{i+1} \oplus C_{i+1} = C_{i+1}$, nên mình sẽ tìm được $C'_i$ ứng với $P'_i$ là message ($C'_i = P'_i \oplus C_{i+1}$).
 
