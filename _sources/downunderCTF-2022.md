@@ -94,6 +94,8 @@ Trời không phụ lòng người :)))) Có công đoán mò có ngày làm nê
 
 *Đã từng có tấm hình ở đây*
 
+![OFB](assets/ofb.png)
+
 Cách giải bài này nằm ở hai dấu chấm đỏ lòm mà mình vẽ :))))
 
 Trong mode OFB, $C_i = P_i \oplus O_i$ với $O_i$​ là encrypt AES của $O_{i-1}$​. Như vậy nếu mình chọn IV2$ sao cho sau khi encrypt thì nó bằng đúng $O_2$​ ở lần encrypt đầu, thì tất cả các $O'_i$​ sau đó luôn giống với $O_i$​ sau một đơn vị. Tức là $O'_i = O_{i+1}$, $i=1,2,\ldots$.
