@@ -20,3 +20,6 @@ parts:
     - file: 2023-18-12-backdoorCTF-2023.md
     - file: utctf-2023.md
     - file: wolvCTF-2023.md
+  - caption: CTF 2024
+    chapters:
+    - file: 0xL4ughCTF-2024.md
