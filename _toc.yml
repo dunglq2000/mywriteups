@@ -23,3 +23,4 @@ parts:
   - caption: CTF 2024
     chapters:
     - file: 0xL4ughCTF-2024.md
+    - file: TJCTF-2024.md
