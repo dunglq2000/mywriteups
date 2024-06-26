@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">CTF 2024</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0xL4ughCTF-2024.html">0xL4ugh CTF 2024</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TJCTF-2024-part-1.html">TJCTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TJCTF-2024-part-1.html">TJCTF 2024 phần 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TJCTF-2024-part-2.html">TJCTF 2024 phần 2</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TJCTF 2024 phần 3</a></li>
 </ul>
@@ -605,7 +605,7 @@ document.write(`
 \[L_{i+1} = R_i, \quad R_{i+1} = L_i \oplus F(R_i, K_{i+1})\]</div>
 <p>Trong đó:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(K_{i+1}\)</span> là khóa ở vòng <span class="math notranslate nohighlight">\(i+1 với \)</span>i = 0, 1, \ldots$.</p></li>
+<li><p><span class="math notranslate nohighlight">\(K_{i+1}\)</span> là khóa ở vòng <span class="math notranslate nohighlight">\(i+1\)</span> với <span class="math notranslate nohighlight">\(i = 0, 1, \ldots\)</span>.</p></li>
 <li><p><span class="math notranslate nohighlight">\(F\)</span> được gọi là round function. Hàm <span class="math notranslate nohighlight">\(F\)</span> phụ thuộc vào cipher là loại nào. Ví dụ thuật toán DES thì <span class="math notranslate nohighlight">\(F\)</span> là các phép biến đổi Expand, P-box và S-box. Hoặc đối với thuật toán GOST thì <span class="math notranslate nohighlight">\(F\)</span> gồm cộng modulo <span class="math notranslate nohighlight">\(2^{32}\)</span>, S-box và dịch <span class="math notranslate nohighlight">\(11\)</span> bit sang trái.</p></li>
 </ul>
 <p>Ở mô hình Feistel bên trên (cũng là mô hình chuẩn) thì hàm <span class="math notranslate nohighlight">\(F\)</span> cố định cho mỗi vòng. Tuy nhiên ở bài này thì round function ở mỗi vòng khác nhau. Cụ thể thì ở vòng một dùng S-box <code class="docutils literal notranslate"><span class="pre">r2</span></code>, ở vòng thứ hai là S-box <code class="docutils literal notranslate"><span class="pre">r1</span></code>, các vòng sau thì dùng hàm <code class="docutils literal notranslate"><span class="pre">r345</span></code>.</p>
@@ -652,16 +652,16 @@ document.write(`
 <div class="section" id="b-differential-attack">
 <h3>b) Differential attack<a class="headerlink" href="#b-differential-attack" title="Permalink to this heading">#</a></h3>
 <p>Differential là gì???</p>
-<p><strong>Định nghĩa.</strong> Xét hàm <span class="math notranslate nohighlight">\(S\)</span> từ <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span> tới <span class="math notranslate nohighlight">\(\mathbb{F}_2^m\)</span>. Với mỗi cặp vector <span class="math notranslate nohighlight">\(bm{a}, \bm{b} \in \mathbb{F}_2^n\)</span> thì ta nói <span class="math notranslate nohighlight">\(\bm{a} \oplus \bm{b}\)</span> là <strong>input differential</strong> và <span class="math notranslate nohighlight">\(S(\bm{a}) \oplus S(\bm{b})\)</span> là <strong>output differential</strong> ứng với hàm <span class="math notranslate nohighlight">\(S\)</span>.</p>
-<p>Hàm <span class="math notranslate nohighlight">\(S\)</span> thường là các S-box trong block cipher. Các S-box thường không tuyến tính, nghĩa là ta không có <span class="math notranslate nohighlight">\(S(\bm{a} \oplus \bm{b}) = S(\bm{a}) \oplus S(\bm{b})\)</span>.</p>
-<p>Differential dựa trên quan sát rằng khi <span class="math notranslate nohighlight">\(\bm{a} \oplus \bm{b}\)</span> cố định thì output differential <span class="math notranslate nohighlight">\(S(\bm{a}) \oplus S(\bm{b})\)</span> phân bố không đều. Giả sử mình có S-box như sau:</p>
+<p><strong>Định nghĩa.</strong> Xét hàm <span class="math notranslate nohighlight">\(S\)</span> từ <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span> tới <span class="math notranslate nohighlight">\(\mathbb{F}_2^m\)</span>. Với mỗi cặp vector <span class="math notranslate nohighlight">\(\boldsymbol{a}, \boldsymbol{b} \in \mathbb{F}_2^n\)</span> thì ta nói <span class="math notranslate nohighlight">\(\boldsymbol{a} \oplus \boldsymbol{b}\)</span> là <strong>input differential</strong> và <span class="math notranslate nohighlight">\(S(\boldsymbol{a}) \oplus S(\boldsymbol{b})\)</span> là <strong>output differential</strong> ứng với hàm <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p>Hàm <span class="math notranslate nohighlight">\(S\)</span> thường là các S-box trong block cipher. Các S-box thường không tuyến tính, nghĩa là ta không có <span class="math notranslate nohighlight">\(S(\boldsymbol{a} \oplus \boldsymbol{b}) = S(\boldsymbol{a}) \oplus S(\boldsymbol{b})\)</span>.</p>
+<p>Differential dựa trên quan sát rằng khi <span class="math notranslate nohighlight">\(\boldsymbol{a} \oplus \boldsymbol{b}\)</span> cố định thì output differential <span class="math notranslate nohighlight">\(S(\boldsymbol{a}) \oplus S(\boldsymbol{b})\)</span> phân bố không đều. Giả sử mình có S-box như sau:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{|c|c|c|c|c|c|c|c|c||c|c|c|c|c|c|c|c|}
     \hline
     x &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 &amp; 11 &amp; 12 &amp; 13 &amp; 14 &amp; 15\\ \hline
     S(x) &amp; 3 &amp; 14 &amp; 1 &amp; 10 &amp; 4 &amp; 9 &amp; 5 &amp; 6 &amp; 8 &amp; 11 &amp; 15 &amp; 2 &amp; 13 &amp; 12 &amp; 0 &amp; 7 \\ \hline
 \end{array}\end{split}\]</div>
-<p>Nếu mình duyệt qua tất cả cặp <span class="math notranslate nohighlight">\(\bm{a}, \bm{b} \in \mathbb{F}_2^4\)</span> thì mình sẽ có quan sát sau:</p>
+<p>Nếu mình duyệt qua tất cả cặp <span class="math notranslate nohighlight">\(\boldsymbol{a}, \boldsymbol{b} \in \mathbb{F}_2^4\)</span> thì mình sẽ có quan sát sau:</p>
 <ul class="simple">
 <li><p>Nếu input vi sai là <span class="math notranslate nohighlight">\(0\)</span> thì output vi sai là <span class="math notranslate nohighlight">\(0\)</span> với xác suất <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
 <li><p>Nếu input vi sai là <span class="math notranslate nohighlight">\(1\)</span> thì output vi sai là <span class="math notranslate nohighlight">\(13\)</span> với xác suất <span class="math notranslate nohighlight">\(6 / 16\)</span>.</p></li>
@@ -669,8 +669,8 @@ document.write(`
 <li><p>Nếu input vi sai là <span class="math notranslate nohighlight">\(8\)</span> thì output vi sai là <span class="math notranslate nohighlight">\(5\)</span> với xác suất <span class="math notranslate nohighlight">\(6 / 16\)</span>.</p></li>
 <li><p>Nếu input vi sai là <span class="math notranslate nohighlight">\(15\)</span> thì output vi sai là <span class="math notranslate nohighlight">\(14\)</span> với xác suất <span class="math notranslate nohighlight">\(6 / 16\)</span>.</p></li>
 </ul>
-<p>Đây là những output differential với <strong>xác suất cao nhất</strong> ứng với mỗi input differential cố định <span class="math notranslate nohighlight">\(\bm{a} \oplus \bm{b}\)</span>.</p>
-<p>Điều đó có nghĩa là cứ trung bình <span class="math notranslate nohighlight">\(16\)</span> cặp <span class="math notranslate nohighlight">\(\bm{a} \oplus \bm{b}\)</span> cho kết quả là <span class="math notranslate nohighlight">\(1\)</span> thì có <span class="math notranslate nohighlight">\(6\)</span> cặp cho output differential là <span class="math notranslate nohighlight">\(13\)</span>.</p>
+<p>Đây là những output differential với <strong>xác suất cao nhất</strong> ứng với mỗi input differential cố định <span class="math notranslate nohighlight">\(\boldsymbol{a} \oplus \boldsymbol{b}\)</span>.</p>
+<p>Điều đó có nghĩa là cứ trung bình <span class="math notranslate nohighlight">\(16\)</span> cặp <span class="math notranslate nohighlight">\(\boldsymbol{a} \oplus \boldsymbol{b}\)</span> cho kết quả là <span class="math notranslate nohighlight">\(1\)</span> thì có <span class="math notranslate nohighlight">\(6\)</span> cặp cho output differential là <span class="math notranslate nohighlight">\(13\)</span>.</p>
 <p>Tận dụng điều này, chúng ta sẽ giải bài tetraethyllead.</p>
 <p>Giả sử <span class="math notranslate nohighlight">\((P, C)\)</span> và <span class="math notranslate nohighlight">\((P', C')\)</span> là hai cặp plaintext-ciphertext sao cho khi input differential <span class="math notranslate nohighlight">\(P \oplus P'\)</span> cố định thì xác suất xảy ra của output differential <span class="math notranslate nohighlight">\(C \oplus C'\)</span> cao nhất. Khi tìm được input và output differential như vậy, ta mã hóa nhiều plaintext khác nhau và khả năng (xác suất) xuất hiện ciphertext tương ứng thỏa mãn differential đó sẽ cao.</p>
 <p>Giả sử <span class="math notranslate nohighlight">\(P = (L_0, R_0)\)</span> và <span class="math notranslate nohighlight">\(P' = (L'_0, R'_0)\)</span> là hai nửa trái phải tương ứng với <span class="math notranslate nohighlight">\(P\)</span> và <span class="math notranslate nohighlight">\(P'\)</span>.</p>
