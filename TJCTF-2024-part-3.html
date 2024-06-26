@@ -1,63 +1,67 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TJCTF 2024 phần 3 &#8212; My sample book</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=564be945" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'TJCTF-2024-part-3';</script>
@@ -73,23 +77,28 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
+
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -111,20 +120,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,13 +140,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="intro.html">
-  
   
   
   
@@ -155,23 +152,12 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -221,7 +207,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -230,14 +216,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -359,28 +345,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -419,14 +403,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tjctf-2024-phan-3">
-<h1>TJCTF 2024 phần 3<a class="headerlink" href="#tjctf-2024-phan-3" title="Link to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tjctf-2024-phan-3">
+<h1>TJCTF 2024 phần 3<a class="headerlink" href="#tjctf-2024-phan-3" title="Permalink to this heading">#</a></h1>
 <p>Mình dành hẳn một phần cho một bài vì bài này khá dài và phức tạp.</p>
 <p>Đây cũng là bài viết đầu tiên của mình về một phương pháp tấn công cực kì phổ biến là differential attack (phá mã vi sai).</p>
-<section id="tetraethyllead">
-<h2>tetraethyllead<a class="headerlink" href="#tetraethyllead" title="Link to this heading">#</a></h2>
+<div class="section" id="tetraethyllead">
+<h2>tetraethyllead<a class="headerlink" href="#tetraethyllead" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># server.py</span>
 <span class="c1">#!/usr/local/bin/python3 -u</span>
 
@@ -612,8 +596,8 @@ document.write(`
 </div>
 <p>Đây là một cipher sử dụng mô hình Feistel để mã hóa. Mô hình Feistel thường xuyên bị tấn công theo phương pháp differential, có thể kể đến như: DES, GOST, hay các phiên bản nhỏ hơn của chúng.</p>
 <p>Do đó yêu cầu chống lại differential attack (cũng như người anh em khác của nó là linear attack) trở thành tiêu chuẩn để xây dựng block cipher hiện nay.</p>
-<section id="a-mo-hinh-feistel">
-<h3>a) Mô hình Feistel<a class="headerlink" href="#a-mo-hinh-feistel" title="Link to this heading">#</a></h3>
+<div class="section" id="a-mo-hinh-feistel">
+<h3>a) Mô hình Feistel<a class="headerlink" href="#a-mo-hinh-feistel" title="Permalink to this heading">#</a></h3>
 <p>Trong mô hình Feistel, mỗi block của plaintext sẽ được chia đôi thành hai nửa trái phải - <span class="math notranslate nohighlight">\(P = L_0 \Vert R_0\)</span>.</p>
 <p>Ở bài này, plaintext có <span class="math notranslate nohighlight">\(8\)</span> bytes và key cũng có <span class="math notranslate nohighlight">\(8\)</span> bytes.</p>
 <p>Trong mô hình Feistel chuẩn, ở mỗi vòng <span class="math notranslate nohighlight">\(i+1\)</span>, sẽ thực hiện biến đổi sau:</p>
@@ -626,7 +610,12 @@ document.write(`
 </ul>
 <p>Ở mô hình Feistel bên trên (cũng là mô hình chuẩn) thì hàm <span class="math notranslate nohighlight">\(F\)</span> cố định cho mỗi vòng. Tuy nhiên ở bài này thì round function ở mỗi vòng khác nhau. Cụ thể thì ở vòng một dùng S-box <code class="docutils literal notranslate"><span class="pre">r2</span></code>, ở vòng thứ hai là S-box <code class="docutils literal notranslate"><span class="pre">r1</span></code>, các vòng sau thì dùng hàm <code class="docutils literal notranslate"><span class="pre">r345</span></code>.</p>
 <p>Mình có thể viết quá trình biến đổi như sau:</p>
-<div class="pst-scrollable-table-container"><table class="table">
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Vòng <span class="math notranslate nohighlight">\(1\)</span></p></td>
 <td><p><span class="math notranslate nohighlight">\(L_1 = R_0\)</span></p></td>
@@ -658,11 +647,10 @@ document.write(`
 </tr>
 </tbody>
 </table>
-</div>
 <p>Lưu ý rằng vòng cuối hơi khác một tí.</p>
-</section>
-<section id="b-differential-attack">
-<h3>b) Differential attack<a class="headerlink" href="#b-differential-attack" title="Link to this heading">#</a></h3>
+</div>
+<div class="section" id="b-differential-attack">
+<h3>b) Differential attack<a class="headerlink" href="#b-differential-attack" title="Permalink to this heading">#</a></h3>
 <p>Differential là gì???</p>
 <p><strong>Định nghĩa.</strong> Xét hàm <span class="math notranslate nohighlight">\(S\)</span> từ <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span> tới <span class="math notranslate nohighlight">\(\mathbb{F}_2^m\)</span>. Với mỗi cặp vector <span class="math notranslate nohighlight">\(bm{a}, \bm{b} \in \mathbb{F}_2^n\)</span> thì ta nói <span class="math notranslate nohighlight">\(\bm{a} \oplus \bm{b}\)</span> là <strong>input differential</strong> và <span class="math notranslate nohighlight">\(S(\bm{a}) \oplus S(\bm{b})\)</span> là <strong>output differential</strong> ứng với hàm <span class="math notranslate nohighlight">\(S\)</span>.</p>
 <p>Hàm <span class="math notranslate nohighlight">\(S\)</span> thường là các S-box trong block cipher. Các S-box thường không tuyến tính, nghĩa là ta không có <span class="math notranslate nohighlight">\(S(\bm{a} \oplus \bm{b}) = S(\bm{a}) \oplus S(\bm{b})\)</span>.</p>
@@ -689,9 +677,9 @@ document.write(`
 <p>Đặt <span class="math notranslate nohighlight">\(\Delta L_{in} = L_0 \oplus L'_0\)</span> và <span class="math notranslate nohighlight">\(\Delta R_{in} = R_0 \oplus R_0\)</span> là input differential trước khi mã hóa.</p>
 <p>Đặt <span class="math notranslate nohighlight">\(\Delta L_{out} = L_7 \oplus L'_7\)</span> và <span class="math notranslate nohighlight">\(\Delta_{in} = R_7 \oplus R'_7\)</span> là output differential sau khi mã hóa.</p>
 <p>Chúng ta sẽ đi qua từng hàm để xem với input-output differential nào thì khả năng xảy ra là cao nhất.</p>
-</section>
-<section id="c-differential-vong-1">
-<h3>c) Differential vòng 1<a class="headerlink" href="#c-differential-vong-1" title="Link to this heading">#</a></h3>
+</div>
+<div class="section" id="c-differential-vong-1">
+<h3>c) Differential vòng 1<a class="headerlink" href="#c-differential-vong-1" title="Permalink to this heading">#</a></h3>
 <p>Sau vòng <span class="math notranslate nohighlight">\(1\)</span> ta có:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(L_1 = R_0\)</span> và <span class="math notranslate nohighlight">\(R_1 = L_0 \oplus r_2(R_0, S_2)\)</span>.</p></li>
@@ -735,9 +723,9 @@ document.write(`
 <p>Bằng một cách <em>ảo ma</em> nào đó thì output differential <span class="math notranslate nohighlight">\(S_2(a) \oplus S_2(a') = 0x80\)</span> có xác suất xảy ra cao nhất khi input differential là <span class="math notranslate nohighlight">\(0x80\)</span>. Cái này writeup nói nhưng chúng ta cũng có thể kiểm tra phân bố vi sai của <span class="math notranslate nohighlight">\(r_2\)</span>.</p>
 <p>Đi ngược lên trên thì <span class="math notranslate nohighlight">\(a \Vert b \Vert c \Vert d \oplus a' \Vert b' \Vert c' \Vert d' = 80 \Vert 00 \Vert 00 \Vert 00\)</span>. Đây chính là vi sai cho <span class="math notranslate nohighlight">\(R_0 \oplus R_0'\)</span>.</p>
 <p>Như vậy <span class="math notranslate nohighlight">\(\Delta L_1 = 0x80000000\)</span> (với xác suất là <span class="math notranslate nohighlight">\(1\)</span>) và <span class="math notranslate nohighlight">\(\Delta R_1 = L_0 \oplus L_0' \oplus 0x80000000\)</span> (với xác suất cao).</p>
-</section>
-<section id="d-differential-vong-2">
-<h3>d) Differential vòng 2<a class="headerlink" href="#d-differential-vong-2" title="Link to this heading">#</a></h3>
+</div>
+<div class="section" id="d-differential-vong-2">
+<h3>d) Differential vòng 2<a class="headerlink" href="#d-differential-vong-2" title="Permalink to this heading">#</a></h3>
 <p>Tương tự, đối với <span class="math notranslate nohighlight">\(r_1\)</span> chúng ta cũng dùng phương pháp tương tự.</p>
 <p>Sau vòng <span class="math notranslate nohighlight">\(2\)</span> ta có:</p>
 <ul class="simple">
@@ -754,9 +742,9 @@ document.write(`
 <p>Như vậy mình đã tìm được input differential cho cả hàm mã hóa là <span class="math notranslate nohighlight">\(L_0 \oplus L_0' = 0x80000000\)</span> và <span class="math notranslate nohighlight">\(R_0 \oplus R_0' = 0x80000000\)</span>.</p>
 <p>Lúc này, differential ở vòng <span class="math notranslate nohighlight">\(2\)</span> có xác suất xảy ra cao nhất là <span class="math notranslate nohighlight">\(L_2 \oplus L_2' = 0x00000000\)</span> và <span class="math notranslate nohighlight">\(R_2 \oplus R_2' = 0x80000000\)</span>.</p>
 <p>Tiếp theo, mình cần biết output differential nào của toàn bộ hàm <code class="docutils literal notranslate"><span class="pre">encrypt</span></code> sẽ có khả năng xảy ra nhất đối với input differential này.</p>
-</section>
-<section id="e-ham-z345">
-<h3>e) Hàm <code class="docutils literal notranslate"><span class="pre">z345</span></code><a class="headerlink" href="#e-ham-z345" title="Link to this heading">#</a></h3>
+</div>
+<div class="section" id="e-ham-z345">
+<h3>e) Hàm <code class="docutils literal notranslate"><span class="pre">z345</span></code><a class="headerlink" href="#e-ham-z345" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">r345</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">rnum</span><span class="p">):</span>
     <span class="n">word</span> <span class="o">^=</span> <span class="n">rrot</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="o">-</span><span class="mi">463</span> <span class="o">+</span> <span class="mi">439</span> <span class="o">*</span> <span class="n">rnum</span> <span class="o">+</span> <span class="o">-</span><span class="mi">144</span> <span class="o">*</span> <span class="n">rnum</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">*</span> <span class="n">rnum</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">rnum</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">^</span> <span class="n">lrot</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="mi">63</span> <span class="o">+</span> <span class="o">-</span><span class="mi">43</span> <span class="o">*</span> <span class="n">rnum</span> <span class="o">+</span> <span class="mi">12</span> <span class="o">*</span> <span class="n">rnum</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="o">-</span><span class="n">rnum</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
 
@@ -777,9 +765,9 @@ document.write(`
     \bar{a} \oplus (\bar{a} &lt;&lt; 5) \oplus \bar{b} \oplus (\bar{b} &lt;&lt; 5) = &amp; a_0 a_1 a_2 a_3 a_4 a_5 a_6 a_7 \oplus a_5 a_6 a_7 0 0 0 0 0 \\ \oplus &amp; b_0 b_1 b_2 b_3 b_4 b_5 b_6 b_7 \oplus b_5 b_6 b_7 00000 \\ = &amp; \underbrace{(a_0 a_1 a_2 a_3 a_4 a_5 a_6 a_7 \oplus b_0 b_1 b_2 b_3 b_4 b_5 b_6 b_7)}_{0x80} \\ \oplus &amp; \underbrace{(a_5 a_6 a_7 00000 \oplus b_5 b_6 b_7 00000)}_{0x00} = 0x80
 \end{align*}\end{split}\]</div>
 <p>Cuối cùng, phép nhân modulo <span class="math notranslate nohighlight">\(2^{32}\)</span> có <span class="math notranslate nohighlight">\(50%\)</span> duy trì differential <span class="math notranslate nohighlight">\(0x80000000\)</span> và do đó differential này vẫn có xác suất cao cho cả <code class="docutils literal notranslate"><span class="pre">z345</span></code>.</p>
-</section>
-<section id="f-giai">
-<h3>f) Giải<a class="headerlink" href="#f-giai" title="Link to this heading">#</a></h3>
+</div>
+<div class="section" id="f-giai">
+<h3>f) Giải<a class="headerlink" href="#f-giai" title="Permalink to this heading">#</a></h3>
 <p>Chiến thuật để giải bài này là:</p>
 <ul class="simple">
 <li><p>Gửi lên các cặp plaintext sao cho <span class="math notranslate nohighlight">\(\Delta L_{in} = 0x80000000\)</span> và <span class="math notranslate nohighlight">\(\Delta R_{in} = 0x80000000\)</span>.</p></li>
@@ -1242,9 +1230,9 @@ document.write(`
 <p>Đầu tiên chúng ta sẽ khôi phục <code class="docutils literal notranslate"><span class="pre">k2</span></code> đi ngược từ ciphertex lên. Chúng ta nhận các khóa thỏa mãn <span class="math notranslate nohighlight">\(\Delta L_6 \oplus \Delta R_6 = 0x80000000\)</span> (vòng <span class="math notranslate nohighlight">\(6\)</span>). Để tìm <code class="docutils literal notranslate"><span class="pre">k2</span></code> thì hàm <code class="docutils literal notranslate"><span class="pre">main</span></code> sẽ là:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span><span class="w">    </span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bruteforce_k1</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">key1</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hex</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">key1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">key2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bruteforce_k2</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">key2</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hex</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">key2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
@@ -1272,9 +1260,9 @@ document.write(`
 </pre></div>
 </div>
 <p>Cám ơn các bạn đã đọc writeup dài lê thê của mình :)))</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1303,8 +1291,8 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer d-print-none">
-                  
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="TJCTF-2024-part-2.html"
@@ -1323,7 +1311,6 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1361,10 +1348,9 @@ By The Jupyter Book Community
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -1388,8 +1374,8 @@ By The Jupyter Book Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
