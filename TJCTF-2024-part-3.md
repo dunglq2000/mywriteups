@@ -858,9 +858,9 @@ std::vector<uint32_t> bruteforce_k2()
 ```cpp
 int main()
 {    
-    std::vector<uint32_t> key1 = bruteforce_k1();
-    for (int i = 0; i < key1.size(); i++)
-        std::cout << std::hex << key1[i] << std::endl;
+    std::vector<uint32_t> key2 = bruteforce_k2();
+    for (int i = 0; i < key2.size(); i++)
+        std::cout << std::hex << key2[i] << std::endl;
     return 0;
 }
 ```
