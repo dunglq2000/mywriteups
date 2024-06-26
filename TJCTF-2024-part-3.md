@@ -206,7 +206,7 @@ $$L_{i+1} = R_i, \quad R_{i+1} = L_i \oplus F(R_i, K_{i+1})$$
 
 Trong đó:
 
-- $K_{i+1}$ là khóa ở vòng $i+1 với $i = 0, 1, \ldots$.
+- $K_{i+1}$ là khóa ở vòng $i+1$ với $i = 0, 1, \ldots$
 - $F$ được gọi là round function. Hàm $F$ phụ thuộc vào cipher là loại nào. Ví dụ thuật toán DES thì $F$ là các phép biến đổi Expand, P-box và S-box. Hoặc đối với thuật toán GOST thì $F$ gồm cộng modulo $2^{32}$, S-box và dịch $11$ bit sang trái.
 
 Ở mô hình Feistel bên trên (cũng là mô hình chuẩn) thì hàm $F$ cố định cho mỗi vòng. Tuy nhiên ở bài này thì round function ở mỗi vòng khác nhau. Cụ thể thì ở vòng một dùng S-box `r2`, ở vòng thứ hai là S-box `r1`, các vòng sau thì dùng hàm `r345`.
@@ -244,11 +244,11 @@ Lưu ý rằng vòng cuối hơi khác một tí.
 
 Differential là gì???
 
-**Định nghĩa.** Xét hàm $S$ từ $\mathbb{F}_2^n$ tới $\mathbb{F}_2^m$. Với mỗi cặp vector $bm{a}, \bm{b} \in \mathbb{F}_2^n$ thì ta nói $\bm{a} \oplus \bm{b}$ là **input differential** và $S(\bm{a}) \oplus S(\bm{b})$ là **output differential** ứng với hàm $S$.
+**Định nghĩa.** Xét hàm $S$ từ $\mathbb{F}_2^n$ tới $\mathbb{F}_2^m$. Với mỗi cặp vector $\boldsymbol{a}, \boldsymbol{b} \in \mathbb{F}_2^n$ thì ta nói $\boldsymbol{a} \oplus \boldsymbol{b}$ là **input differential** và $S(\boldsymbol{a}) \oplus S(\boldsymbol{b})$ là **output differential** ứng với hàm $S$.
 
-Hàm $S$ thường là các S-box trong block cipher. Các S-box thường không tuyến tính, nghĩa là ta không có $S(\bm{a} \oplus \bm{b}) = S(\bm{a}) \oplus S(\bm{b})$.
+Hàm $S$ thường là các S-box trong block cipher. Các S-box thường không tuyến tính, nghĩa là ta không có $S(\boldsymbol{a} \oplus \boldsymbol{b}) = S(\boldsymbol{a}) \oplus S(\boldsymbol{b})$.
 
-Differential dựa trên quan sát rằng khi $\bm{a} \oplus \bm{b}$ cố định thì output differential $S(\bm{a}) \oplus S(\bm{b})$ phân bố không đều. Giả sử mình có S-box như sau:
+Differential dựa trên quan sát rằng khi $\boldsymbol{a} \oplus \boldsymbol{b}$ cố định thì output differential $S(\boldsymbol{a}) \oplus S(\boldsymbol{b})$ phân bố không đều. Giả sử mình có S-box như sau:
 
 $$\begin{array}{|c|c|c|c|c|c|c|c|c||c|c|c|c|c|c|c|c|}
     \hline
@@ -256,7 +256,7 @@ $$\begin{array}{|c|c|c|c|c|c|c|c|c||c|c|c|c|c|c|c|c|}
     S(x) & 3 & 14 & 1 & 10 & 4 & 9 & 5 & 6 & 8 & 11 & 15 & 2 & 13 & 12 & 0 & 7 \\ \hline
 \end{array}$$
 
-Nếu mình duyệt qua tất cả cặp $\bm{a}, \bm{b} \in \mathbb{F}_2^4$ thì mình sẽ có quan sát sau:
+Nếu mình duyệt qua tất cả cặp $\boldsymbol{a}, \boldsymbol{b} \in \mathbb{F}_2^4$ thì mình sẽ có quan sát sau:
 
 - Nếu input vi sai là $0$ thì output vi sai là $0$ với xác suất $1$.
 - Nếu input vi sai là $1$ thì output vi sai là $13$ với xác suất $6 / 16$.
@@ -264,9 +264,9 @@ Nếu mình duyệt qua tất cả cặp $\bm{a}, \bm{b} \in \mathbb{F}_2^4$ th�
 - Nếu input vi sai là $8$ thì output vi sai là $5$ với xác suất $6 / 16$.
 - Nếu input vi sai là $15$ thì output vi sai là $14$ với xác suất $6 / 16$.
 
-Đây là những output differential với **xác suất cao nhất** ứng với mỗi input differential cố định $\bm{a} \oplus \bm{b}$.
+Đây là những output differential với **xác suất cao nhất** ứng với mỗi input differential cố định $\boldsymbol{a} \oplus \boldsymbol{b}$.
 
-Điều đó có nghĩa là cứ trung bình $16$ cặp $\bm{a} \oplus \bm{b}$ cho kết quả là $1$ thì có $6$ cặp cho output differential là $13$.
+Điều đó có nghĩa là cứ trung bình $16$ cặp $\boldsymbol{a} \oplus \boldsymbol{b}$ cho kết quả là $1$ thì có $6$ cặp cho output differential là $13$.
 
 Tận dụng điều này, chúng ta sẽ giải bài tetraethyllead.
 
